@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(a, b, c) {
+        //3가지 모두 동시에 if 문으로 확인하는 방법
+        let answer;
+        if (b > a) {
+          if (c > a) {
+            answer = a;
+          }
+        } else if (a > b) {
+          if (c > b) {
+            answer = b;
+          }
+        } else {
+          answer = c;
+        }
+        return answer;
+      }
+      console.log(solution(20, 15, 44));
+    </script>
+  </body>
+</html>
