@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <div class="answer"></div>
+    <script>
+      const kotae = document.querySelector(".answer");
+      function solution(n) {
+        let answer = n / 12;
+        return Math.ceil(answer);
+      }
+      kotae.innerText = solution(178);
+    </script>
+  </body>
+</html>
