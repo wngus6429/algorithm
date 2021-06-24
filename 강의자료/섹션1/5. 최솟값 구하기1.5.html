@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <div class="answer"></div>
+    <script>
+      const answer = document.querySelector(".answer");
+      function solution(arr) {
+        let min = Math.min(...arr);
+        // 혹은 let min = Math.min.apply(null, arr);
+        return min;
+      }
+      let arr = [5, 3, 7, 11, 5, 15, 17];
+      answer.innerText = solution(arr);
+    </script>
+  </body>
+</html>
