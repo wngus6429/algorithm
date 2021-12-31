@@ -8,5 +8,4 @@ function solution(a, b, c) {
   if (c < answer) answer = c;
   return answer;
 }
-
 min.innerText = solution(44, 55, 33);
