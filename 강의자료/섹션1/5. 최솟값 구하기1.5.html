@@ -10,6 +10,7 @@
       function solution(arr) {
         let min = Math.min(...arr);
         // 혹은 let min = Math.min.apply(null, arr);
+        // 전개 연산자 ...arr 안할려면 apply
         return min;
       }
       let arr = [5, 3, 7, 11, 5, 15, 17];

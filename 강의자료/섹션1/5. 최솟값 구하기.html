@@ -9,6 +9,8 @@
       const answer = document.querySelector(".answer");
       function solution(arr) {
         let min = Number.MAX_SAFE_INTEGER;
+        // let min = arr[0];
+        // 첫번째 숫자 무조건 min에 들어가게 할려고 큰숫자 넣음
         console.log(arr);
         for (let i = 0; i < arr.length; i++) {
           if (arr[i] < min) {
