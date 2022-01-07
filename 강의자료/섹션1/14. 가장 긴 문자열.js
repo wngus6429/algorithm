@@ -11,3 +11,4 @@ function calcul(str) {
 }
 let str = ["teacher", "time", "student", "beautiful", "good"];
 console.log(calcul(str));
+
