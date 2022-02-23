@@ -17,7 +17,6 @@ function solutions(s) {
   for (let i = 0; i < s.length; i++) {
     //console.log(s[i], i, s.indexOf(s[i]));
     if (s.indexOf(s[i]) === i) answer += s[i];
-    //
     // indexOf/lastIndexOf(item, pos) – pos부터 원하는 item을 찾음.
   }
   return answer;
