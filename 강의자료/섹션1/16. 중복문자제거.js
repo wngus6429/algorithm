@@ -1,18 +1,20 @@
-const problem = "ksekksetjqerkjqkhqjktqjkj";
+const problem = 'ksekksetjqerkjqkhqjktqjkj';
 function solution(word) {
   let Array = [];
   for (const i of word) {
     Array.push(i);
   }
+  console.log('어레이', Array);
   setArray = new Set(Array); //결과는 객체다.
+  console.log('객체로', setArray);
   answer = [...setArray]; //객체를 배열로
-  let 정답 = answer.join(""); //배열을 문자열로
+  let 정답 = answer.join(''); //배열을 문자열로
   return 정답;
 }
 console.log(solution(problem));
 ///////////////////////////////////////////////
 function solutions(s) {
-  let answer = "";
+  let answer = '';
   //console.log(s.indexOf("K"));
   for (let i = 0; i < s.length; i++) {
     //console.log(s[i], i, s.indexOf(s[i]));
@@ -21,4 +23,4 @@ function solutions(s) {
   }
   return answer;
 }
-console.log(solutions("ksekkset"));
+console.log(solutions('ksekkset'));
