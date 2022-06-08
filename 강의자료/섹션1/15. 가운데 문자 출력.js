@@ -1,4 +1,4 @@
-const gg = 'gowyywrk';
+const gg = 'gowyywrkasdasdasdqwd';
 function middle(word) {
   let answer = '';
   if (word.length % 2 === 0) {

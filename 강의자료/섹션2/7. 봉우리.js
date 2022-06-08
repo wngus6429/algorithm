@@ -14,6 +14,7 @@ function solution(arr) {
     for (let j = 0; j < n; j++) {
       let flag = 1;
       for (let k = 0; k < 4; k++) {
+        // 4방향 보기위해
         let nx = i + dx[k]; // 갈려고 하는 행 좌표
         let ny = j + dy[k]; // 갈려고 하는 열 좌표
         if (nx >= 0 && nx < n && ny >= 0 && ny < n && arr[nx][ny] > arr[i][j]) {
