@@ -1,6 +1,6 @@
-const gg = "gowywrk";
+const gg = 'gowyywrkasdasdasdqwd';
 function middle(word) {
-  let answer = "";
+  let answer = '';
   if (word.length % 2 === 0) {
     answer = word.substr(word.length / 2 - 1, 1) + word.substr(word.length / 2, 1);
   } else {
