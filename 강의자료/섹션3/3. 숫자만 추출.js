@@ -1,4 +1,5 @@
-let word = 'g0en2T0s8eSof02t';
+let word = 'g0en2Tjghjgr656575erdgdfgw4240s8eSof02t';
+console.log(solution(word));
 function solution(word) {
   let answer = [];
   for (let i = 0; i < word.length; i++) {
@@ -11,7 +12,6 @@ function solution(word) {
   answer = answer.join('');
   return Number(answer); //parseInt
 }
-console.log(solution(word));
 
 // let word = 'g0en2T0s8eSof02t';
 // function solution(word) {

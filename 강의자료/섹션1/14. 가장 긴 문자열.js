@@ -1,5 +1,6 @@
 function calcul(str) {
   let max = Number.MIN_SAFE_INTEGER;
+  console.log(max);
   let answer = '';
   for (let nakami of str) {
     if (nakami.length > max) {
