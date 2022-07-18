@@ -2,7 +2,7 @@ function solution(s) {
   let answer;
   let sH = new Map();
   for (let x of s) {
-    // 가지고 있다면
+    // 가지고 있다면, 해당값 1 추가, 기존값 가져와서 1추가지
     if (sH.has(x)) sH.set(x, sH.get(x) + 1);
     // 가지고 있지 않다면
     else sH.set(x, 1);
@@ -14,6 +14,7 @@ function solution(s) {
       answer = key;
     }
   }
+  console.log(sH);
   return answer;
 }
 
