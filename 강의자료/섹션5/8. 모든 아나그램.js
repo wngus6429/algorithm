@@ -21,12 +21,21 @@ function solution(s, t) {
     // 없으면 새롭게 추가한다.
     else sH.set(s[i], 1);
   }
+  // 맨 왼쪽 위치 하나 잡아주고
   let lt = 0;
+  // 위에 len = 2부터 시작해서 s 최대 길이만큼 돌린다.
   for (let rt = len; rt < s.length; rt++) {
+    console.log('전', s[rt], sH);
+    // sH 해쉬변수에 s[rt]가 있으면, 추가한다.
     if (sH.has(s[rt])) sH.set(s[rt], sH.get(s[rt]) + 1);
+    // 그렇지 않으면 새로 세팅한다.
     else sH.set(s[rt], 1);
+    console.log('후', s[rt], sH);
+    // 비교해서 같으면 answer++
     if (compareMaps(sH, tH)) answer++;
+    // sH안에서 s[lt]를 찾아서 1뺀다.
     sH.set(s[lt], sH.get(s[lt]) - 1);
+    // 만약 s[lt]가 0이 되면 요소 key 삭제하고 lt 1증가
     if (sH.get(s[lt]) === 0) sH.delete(s[lt]);
     lt++;
   }
