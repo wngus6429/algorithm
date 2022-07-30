@@ -2,6 +2,7 @@ function solution(s) {
   let answer = 'YES';
   stack = [];
   for (let x of s) {
+    // ( 이면 넣고 ) 이면 뺀다. 그 길이가 0이면
     if (x === '(') {
       stack.push(x);
     } else {
