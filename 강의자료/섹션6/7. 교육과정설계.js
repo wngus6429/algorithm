@@ -4,8 +4,8 @@ function solution(need, plan) {
   for (let x of plan) {
     // queue(필수과목) 확인하기
     if (queue.includes(x)) {
-      // 아직 queue 앞에 남아 있는게 있네?
       // 필수과목 순서 안 맞음 NO
+      // 어짜피 queue의 맨앞 삭제 해야하니 shift해서 비교하는게 맞응
       if (x !== queue.shift()) return 'NO';
     }
   }
