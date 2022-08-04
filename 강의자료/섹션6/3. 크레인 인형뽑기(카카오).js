@@ -3,6 +3,7 @@ function solution(board, moves) {
   let stack = [];
   // moves의 길이만큼 돈다.
   moves.forEach((pos) => {
+    // 크레인이 맨 아래까지 내려갈수 잇도록 for문 해준다.
     for (let i = 0; i < board.length; i++) {
       // pos에 -1 하는건 인덱스 번호 때문임
       //인형을 만난거임

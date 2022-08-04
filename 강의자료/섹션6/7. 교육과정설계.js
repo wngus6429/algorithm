@@ -1,6 +1,7 @@
 function solution(need, plan) {
   let answer = 'YES';
   let queue = need.split('');
+  console.log(queue);
   for (let x of plan) {
     // queue(필수과목) 확인하기
     if (queue.includes(x)) {

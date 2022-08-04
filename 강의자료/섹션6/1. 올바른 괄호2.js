@@ -2,6 +2,7 @@ function solution(a) {
   let answer = 'NO';
   let aa = 0;
   let bb = 0;
+  // 단순히 ( 와 ) 의 갯수를 세어서 같은지 확인
   for (const x of a) {
     if (x === '(') {
       aa++;
@@ -13,7 +14,6 @@ function solution(a) {
   if (aa === bb) {
     answer = 'YES';
   }
-  console.log(aa, bb);
   return answer;
 }
 

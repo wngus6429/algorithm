@@ -10,6 +10,7 @@ function solution(s) {
       stack.pop();
     }
   }
+  // ( 가 더 많으니 NO
   if (stack.length > 0) return 'NO';
   return answer;
 }
