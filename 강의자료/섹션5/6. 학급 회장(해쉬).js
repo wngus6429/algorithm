@@ -9,12 +9,14 @@ function solution(s) {
   }
   let max = Number.MIN_SAFE_INTEGER;
   for (let [key, val] of sH) {
+    console.log(key, val);
+    // val이 max보다 크면
     if (val > max) {
       max = val;
       answer = key;
     }
   }
-  console.log(sH);
+  console.log('결과', sH);
   return answer;
 }
 
