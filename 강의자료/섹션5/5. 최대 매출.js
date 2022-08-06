@@ -6,6 +6,7 @@ function solution(k, arr) {
   }
   answer = sum;
   for (let i = k; i < arr.length; i++) {
+    // 한칸 앞으로 나갔으면 맨 뒤쪽도 빼줘야 하니까.
     sum += arr[i] - arr[i - k]; // 3칸씩 앞으로 밀고감
     answer = Math.max(answer, sum);
   }
