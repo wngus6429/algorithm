@@ -4,12 +4,12 @@ function solution(n, k, card) {
   for (let i = 0; i < n; i++) {
     for (let j = i + 1; j < n; j++) {
       for (let g = j + 1; g < n; g++) {
+        // set에 데이터 넣는건 add 이다
         tmp.add(card[i] + card[j] + card[g]);
       }
     }
   }
-  console.log(tmp);
-  // set은 sort지원안함, 내림차순 ㄱㄱ
+  // set은 sort지원안함, 그래서 Array.from 사용해서 sort 사용
   let a = Array.from(tmp).sort((a, b) => b - a);
   console.log(a);
   answer = a[k - 1]; // 3번째니까 인덱스로는 2를 만들어줘야지
