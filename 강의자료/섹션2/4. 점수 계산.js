@@ -1,4 +1,3 @@
-const numbers = [1, 0, 1, 1, 1, 1, 0, 1, 1, 0];
 function solution(numbers) {
   let answer = 0;
   let stack = 1;
@@ -12,4 +11,6 @@ function solution(numbers) {
   }
   return answer;
 }
-console.log(solution(numbers));
+const numbers = [1, 0, 1, 1, 1, 1, 0, 1, 1, 0];
+console.log(solution(numbers)); // 1 + 1 + 2 + 3+ 4 + 1 + 2
+// 20220813 복습

@@ -25,3 +25,4 @@ console.log(solution(word));
 //   return answer;
 // }
 // console.log(solution(word));
+// 20220813 복습

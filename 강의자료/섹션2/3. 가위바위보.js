@@ -19,3 +19,5 @@ function solution(a, b) {
   return answer;
 }
 console.log(solution(a, b));
+
+// 20220813 복습

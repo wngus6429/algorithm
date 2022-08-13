@@ -32,3 +32,4 @@ function solution(s, t) {
 const pro = 'teachermode';
 const spell = 'e';
 console.log(solution(pro, spell));
+// 20220812 복습
