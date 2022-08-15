@@ -21,3 +21,4 @@ function solution(word) {
 }
 const word = 'KKHSSSSSSSE';
 console.log(solution(word));
+// 20220812 복습
