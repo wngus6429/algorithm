@@ -6,7 +6,7 @@ function count(songs, capacity) {
     if (sum + x > capacity) {
       //저장 할수 없음. 그래서 DVD추가
       cnt++;
-      sum = x;
+      sum = x; // cnt 증가 했으니까
     } else sum += x;
   }
   // mid의 특정용량에 몇개의 DVD를 최대 담을수 있는지 결과
