@@ -32,6 +32,6 @@ function solution(m, songs) {
   }
   return answer;
 }
-
+// 3장으로 DVD를 만들시 곡을 몇분 넣어야 하는가.
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 console.log(solution(3, arr));
