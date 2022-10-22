@@ -6,6 +6,7 @@ function solution(arr) {
   for (let x of arr) {
     // 숫자 뒤집기
     let stringNum = x.toString().split('').reverse().join('');
+    // console.log(stringNum)
     let tmp = 0;
     // 각 자리값을 tmp에 더하기
     for (let value of stringNum) {

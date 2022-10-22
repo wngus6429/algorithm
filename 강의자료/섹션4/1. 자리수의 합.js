@@ -37,7 +37,10 @@ function solution2(n, arr) {
       tmp = x;
     while (tmp) {
       sum += tmp % 10;
+      console.log('sum', sum)
+      console.log('tmp1', tmp)
       tmp = Math.floor(tmp / 10); //! 소수점 없앰
+      console.log('tmp2', tmp)
     }
     if (sum > max) {
       max = sum;

@@ -2,6 +2,7 @@ function isPrime(num) {
   // 1이면 걍 소수로 취급 안해줌
   if (num === 1) return false;
   console.log(num, parseInt(Math.sqrt(num)));
+  // parseInt는 소수점 없애기 위한것.
   for (let i = 2; i <= parseInt(Math.sqrt(num)); i++) {
     // num이 2와 본인의 숫자 사이에 숫자들 중에서 0으로 딱 떨어지는가 확인
     if (num % i === 0) return false;
@@ -13,6 +14,7 @@ function solution2(arr) {
   let answer = [];
   for (let x of arr) {
     let res = Number(x.toString().split('').reverse().join(''));
+    console.log(res)
     // 소수 확인한다.
     if (isPrime(res)) answer.push(res);
   }

@@ -1,7 +1,7 @@
 function solution(arr) {
   let answer = 0;
   let dy = Array.from({ length: arr.length }, () => 0);
-  dy[0] = 1;
+  dy[0] = 1 ;
   for (let i = 1; i < arr.length; i++) {
     let max = 0;
     for (let j = i - 1; j >= 0; j--) {
