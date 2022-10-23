@@ -1,6 +1,7 @@
 function solution(n, k, card) {
   let answer;
-  let tmp = new Set(); // 같은 숫자가 있을수도 있기에 set
+  let tmp = new Set(card); // 같은 숫자가 있을수도 있기에 set
+  // 3개의 범위로 돌려라 돌려.
   for (let i = 0; i < n; i++) {
     for (let j = i + 1; j < n; j++) {
       for (let g = j + 1; g < n; g++) {
@@ -11,7 +12,7 @@ function solution(n, k, card) {
   }
   // set은 sort지원안함, 그래서 Array.from 사용해서 sort 사용
   let a = Array.from(tmp).sort((a, b) => b - a);
-  console.log(a);
+  console.log("a", a);
   answer = a[k - 1]; // 3번째니까 인덱스로는 2를 만들어줘야지
   return answer;
 }
