@@ -1,7 +1,6 @@
 function solution(day, arr) {
   let answer = [];
   for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
     let check = arr[i].toString();
     if (Number(check.slice(1)) === day) {
       answer.push(check);
