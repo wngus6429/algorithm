@@ -9,3 +9,4 @@ function solution(a, b, c) {
   return answer;
 }
 min.innerText = solution(44, 55, 33);
+//! 20230324 복습

@@ -13,3 +13,4 @@ function 홀수(arr) {
 }
 let arr = [12, 77, 38, 41, 53, 92, 85];
 console.log(홀수(arr));
+//! 20230324 복습
