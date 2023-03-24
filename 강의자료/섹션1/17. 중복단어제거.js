@@ -1,10 +1,6 @@
 let str = ["good", "time", "good", "time", "student"];
 function solution(word) {
-  let array = [];
-  for (const i of word) {
-    array.push(i);
-  }
-  const set = new Set(array);
+  const set = new Set(word);
   const 정답 = [...set];
   return 정답;
 }
@@ -12,7 +8,6 @@ console.log(solution(str));
 ////////////////////////////////////////////////////
 function solutions(s) {
   let answer;
-  //console.log(s.indexOf("time"));
   answer = s.filter(function (v, i) {
     return s.indexOf(v) === i; //true, false 나오겠지
     // true 일떄 v를 리턴하겠지.
@@ -23,4 +18,6 @@ function solutions(s) {
   return answer;
 }
 let strr = ["good", "time", "good", "time", "student"];
-console.log(solution(strr));
+console.log(solutions(strr));
+//! 20220813 복습
+//! 20230324 복습

@@ -9,3 +9,4 @@ function middle(word) {
   return answer;
 }
 console.log(middle(gg));
+//! 20230324 복습

@@ -11,4 +11,5 @@ function solution(numbers) {
 }
 const numbers = [7, 3, 9, 5, 6, 12];
 console.log(solution(numbers));
-// 20220813 복습
+//! 20220813 복습
+//! 20230324 복습

@@ -4,7 +4,6 @@ function solution(word) {
   for (const i of word) {
     Array.push(i);
   }
-  console.log('어레이', Array);
   setArray = new Set(Array); //결과는 객체다.
   console.log('객체로', setArray);
   answer = [...setArray]; //객체를 배열로
@@ -15,12 +14,11 @@ console.log(solution(problem));
 ///////////////////////////////////////////////
 function solutions(s) {
   let answer = '';
-  //console.log(s.indexOf("K"));
   for (let i = 0; i < s.length; i++) {
-    //console.log(s[i], i, s.indexOf(s[i]));
     if (s.indexOf(s[i]) === i) answer += s[i];
-    // indexOf/lastIndexOf(item, pos) – pos부터 원하는 item을 찾음.
   }
   return answer;
+  // indexOf/lastIndexOf(item, pos) – pos부터 원하는 item을 찾음.
 }
 console.log(solutions('ksekkset'));
+//! 20230324 복습
