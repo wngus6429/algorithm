@@ -4,3 +4,4 @@ function solution(s) {
 }
 let str = "BANANA";
 console.log(solution(str));
+//! 20230324 복습

@@ -1,6 +1,5 @@
 function calcul(str) {
   let max = Number.MIN_SAFE_INTEGER;
-  console.log(max);
   let answer = '';
   for (let nakami of str) {
     if (nakami.length > max) {
@@ -12,3 +11,4 @@ function calcul(str) {
 }
 let str = ['teacher', 'time', 'student', 'beautiful', 'good'];
 console.log(calcul(str));
+//! 20230324 복습

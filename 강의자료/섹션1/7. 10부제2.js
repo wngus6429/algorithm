@@ -5,3 +5,4 @@ arr = [25, 23, 11, 47, 53, 17, 33];
 console.time();
 console.log(solution(3, arr));
 console.timeEnd();
+//! 20230324 복습
