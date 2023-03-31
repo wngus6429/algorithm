@@ -13,5 +13,5 @@ function solution(numbers) {
 }
 const numbers = [130, 135, 148, 140, 145, 150, 150, 153];
 console.log(solution(numbers));
-
-// 20220813 복습
+//! 20220813 복습
+//! 20230325 복습

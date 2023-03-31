@@ -18,6 +18,7 @@ function solution(arr) {
     }
     // 행, 열 싹다 구해서 제일 큰 수가 answer에 남아있게끔
     answer = Math.max(answer, sum1, sum2); //이 3개중에 최대값 들어감
+    console.log('앤서', answer);
   }
   sum1 = sum2 = 0;
   for (let k = 0; k < n; k++) {
@@ -27,8 +28,10 @@ function solution(arr) {
     sum2 += arr[k][n - k - 1];
   }
   answer = Math.max(answer, sum1, sum2);
+  console.log('2앤서', answer);
   // 행, 열, 대각선 모든 값 다 구해서 젤 큰놈 answer에 들어있음.
   return answer;
 }
 console.log(solution(arr));
-// 20220814 복습
+//! 20220814 복습
+//! 20230325 복습
