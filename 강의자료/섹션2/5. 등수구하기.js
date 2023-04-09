@@ -3,8 +3,9 @@ function solution(numbers) {
   let answer = Array.from({ length: numbers.length }, () => 1);
   for (let i = 0; i < numbers.length; i++) {
     for (let g = 0; g < numbers.length; g++) {
+      console.log(numbers[i], numbers[g]);
       if (numbers[i] > numbers[g]) {
-        console.log(numbers[i], numbers[g]);
+        console.log('정답', numbers[i], numbers[g]);
         //! 등수는 숫자가 작을수록 높은거니까.
         answer[g]++;
         console.log(answer);
