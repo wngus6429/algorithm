@@ -1,9 +1,7 @@
 const problem = 'gooG';
 function solution(word) {
-  let word1 = '';
-  let word2 = '';
-  word1 = word.toUpperCase();
-  word2 = word.split('').reverse().join('').toUpperCase();
+  const word1 = word.toUpperCase();
+  const word2 = word.split('').reverse().join('').toUpperCase();
   // 바로 reverse()가 안되더라
   if (word1 === word2) {
     return 'YES';
@@ -25,6 +23,6 @@ function solution2(word) {
     return answer;
   }
 }
-const problem2 = 'goooG';
-console.log(solution2(problem));
+const problem2 = 'goooGt';
+console.log(solution2(problem2));
 // 20220813 복습
