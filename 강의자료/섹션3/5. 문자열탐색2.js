@@ -18,3 +18,4 @@ function solution(s) {
 const 문제 = 'KKHSSSSSSSE';
 console.log(solution(문제));
 // 20220812 복습
+// 20230507 복습
