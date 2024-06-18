@@ -10,3 +10,4 @@ function solution(a, b, c) {
 }
 min.innerText = solution(44, 55, 33);
 //! 20230324 복습
+//! 20240619 복습

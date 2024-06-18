@@ -12,3 +12,4 @@ function solution(a, b, c) {
 }
 console.log(solution(13, 20, 17));
 //! 20230324 복습
+//! 20240619 복습
