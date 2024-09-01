@@ -1,6 +1,7 @@
 let str = ["good", "time", "good", "time", "student"];
 function solution(word) {
-  const set = new Set(word);
+  const set = new Set(word); // 결과 set은 객체이다
+  // 객체를 배열로 바꿔야함.
   const 정답 = [...set];
   return 정답;
 }

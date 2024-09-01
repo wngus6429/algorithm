@@ -5,3 +5,4 @@ function calcul(a) {
 let question = "ItisTimeToStudy";
 calcul(question);
 //! 20230324 복습
+//! 20240901 복습
