@@ -22,7 +22,7 @@ function solution(arr) {
         // 빈공간의 위치를 탐색하지 않게끔. 조건 걸어줬다. arr[-1]이런건 없으니까.
         // arr[nx][ny]가 북동남서를 보는거고 arr[i][j]가 봉우리가 될지 안될지 판단하는 중간위치
         if (nx >= 0 && nx < arr.length && ny >= 0 && ny < arr.length && arr[nx][ny] > arr[i][j]) {
-          console.log('시발', arr[nx][ny], arr[i][j])
+          console.log("시발", arr[nx][ny], arr[i][j]);
           flag = 0;
           break; //상하좌우 한곳만 커도 중지시키기 위해
         }
@@ -37,3 +37,4 @@ function solution(arr) {
 }
 console.log(solution(arr));
 // 20220814복습
+// 20241006 복습
