@@ -5,15 +5,15 @@ function solution(a, b) {
   let answer = [];
   for (let i = 0; i < a.length; i++) {
     if (a[i] === 1 && b[i] === 3) {
-      answer.push('A');
+      answer.push("A");
     } else if (a[i] === 2 && b[i] === 1) {
-      answer.push('A');
+      answer.push("A");
     } else if (a[i] === 3 && b[i] === 2) {
-      answer.push('A');
+      answer.push("A");
     } else if (a[i] === b[i]) {
-      answer.push('D');
+      answer.push("D");
     } else {
-      answer.push('B');
+      answer.push("B");
     }
   }
   return answer;
@@ -21,3 +21,4 @@ function solution(a, b) {
 console.log(solution(a, b));
 //! 20220813 복습
 //! 20230325 복습
+//! 20241122 복습
