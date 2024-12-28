@@ -7,10 +7,10 @@ function solution(word) {
     }
   }
   console.log(answer);
-  answer = answer.join('');
+  answer = answer.join("");
   return Number(answer); //parseInt
 }
-let word = 'g0en2Tjghjgr656575erdgdfgw4240s8eSof02t';
+let word = "g0en2Tjghjgr656575erdgdfgw4240s8eSof02t";
 console.log(solution(word));
 
 // let word = 'g0en2T0s8eSof02t';
@@ -27,3 +27,4 @@ console.log(solution(word));
 // console.log(solution(word));
 // 20220813 복습
 // 20230507 복습
+// 20241229 복습

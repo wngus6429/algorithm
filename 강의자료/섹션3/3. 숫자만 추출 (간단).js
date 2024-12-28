@@ -1,5 +1,5 @@
 function solution(str) {
-  let answer = '';
+  let answer = "";
   for (let x of str) {
     if (!isNaN(x)) {
       answer += x;
@@ -7,7 +7,8 @@ function solution(str) {
   }
   return parseInt(answer); // 208
 }
-let str = 'g0en2T0s8eSoft';
+let str = "g0en2T0s8eSoft";
 console.log(solution(str));
 // 20220813 복습
 // 20230507 복습
+// 20241229 복습

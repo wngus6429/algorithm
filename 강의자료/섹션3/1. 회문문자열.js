@@ -27,3 +27,4 @@ const problem2 = "goooGt";
 console.log(solution2(problem2));
 // 20220813 복습
 // 20241006 복습
+// 20241228 복습
