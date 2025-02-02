@@ -1,6 +1,6 @@
 function solution(s, t) {
   let answer = [];
-  let p = 1000;
+  let p = 1000; // 대충 큰거 잡은거임
   // 왼쪽 e에서 떨어진 거리를 먼저 구함
   for (let x of s) {
     if (x === t) {
@@ -30,8 +30,9 @@ function solution(s, t) {
   }
   return answer;
 }
-const pro = 'teachermode';
-const spell = 'e';
+const pro = "teachermode";
+const spell = "e";
 console.log(solution(pro, spell));
 // 20220812 복습
 // 20230507 복습
+// 20250202 복습

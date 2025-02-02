@@ -5,6 +5,7 @@ function solution(str) {
       answer += x;
     }
   }
+  console.log(answer);
   return parseInt(answer); // 208
 }
 let str = "g0en2T0s8eSoft";
