@@ -35,3 +35,4 @@ const spell = "e";
 console.log(solution(pro, spell));
 // 20220812 복습
 // 20230507 복습
+// 20250202 복습
