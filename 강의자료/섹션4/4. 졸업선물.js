@@ -5,23 +5,23 @@ function solution(m, product) {
   let n = product.length; // 사람의 숫자
   // 최대 몇명까지 사줄수 있는가를 구하는거니까.
   // 제일 싼거부터 구입하면 더 많이 사줄수 있으니 작은수 차례로 배열, 오름차순
-  product.sort((a, b) => (a[0] + a[1]) - (b[0] + b[1]));
+  product.sort((a, b) => a[0] + a[1] - (b[0] + b[1]));
   // i 번쨰의 상품이 할인을 받는다
-  console.log("프로덕트", product)
+  console.log("프로덕트", product);
   for (let i = 0; i < n; i++) {
     // 각 상품 가격을 할인해서 비용을 계산해보는거임
     let money = m - (product[i][0] / 2 + product[i][1]);
-    console.log('머니', money); // 25, 23, 21, 19, 20
+    console.log("머니", money); // 25, 23, 21, 19, 20
     let cnt = 1; // 최소한 1개 이상 상품 살수 있는 전제
     for (let j = 0; j < n; j++) {
       // 예산 금액으로 몇명까지 사줄수 있는지 구함
-      // i는 할인된 상품이라서 이미 계산됨
+      // i는 할인된 상품이라서 이미 계산되어서 13줄, j !== i 조건을 줌
       if (j !== i && product[j][0] + product[j][1] > money) {
         // 예산 금액보다 비싸면 못 사주니까 스톱이지
         // 오름차순 햇는데. 작은게 안되는데 큰게 될리가 없지.
         break;
       }
-      // i는 할인된 상품이라서 이미 계산됨
+      //  i는 할인된 상품이라서 이미 계산되어서 13줄, j !== i 조건을 줌
       // 예산보다 작은 비용이니까 사줄수 있는거지.
       if (j !== i && product[j][0] + product[j][1] <= money) {
         // 가진 예산에서 상품 구입 가격 + 배송비를 빼주고
@@ -36,6 +36,7 @@ function solution(m, product) {
   return answer;
 }
 // 학생수 5명, 예산 28
+// 상품가격, 배송비
 let arr = [
   [6, 6],
   [2, 2],
