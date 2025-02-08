@@ -50,3 +50,4 @@ let arr = [
   [3, 1, 4, 2],
 ];
 console.log(solution(arr));
+// 20250208 복습
