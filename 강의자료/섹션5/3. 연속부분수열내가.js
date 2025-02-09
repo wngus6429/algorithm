@@ -3,13 +3,17 @@ function solution(num, arr) {
   let answer = 0;
   let left = 0;
   let sum = 0;
-  for (let right = 0; right < arr.length; right++) {
-    sum += arr[right];
-    if (sum === num) answer++;
-    while (sum >= num) {
-      sum -= arr[left];
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+    if (sum === num) {
+      answer++;
+    }
+    while (sum > num) {
       left++;
-      if (sum === num) answer++;
+      sum -= arr[left];
+      if (sum === num) {
+        answer++;
+      }
     }
   }
   return answer;
