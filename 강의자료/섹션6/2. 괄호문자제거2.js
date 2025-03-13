@@ -17,4 +17,4 @@ function solution(str) {
 }
 let str = "(A(BC)D)EF(G(H)(IJ)K)LM(N)";
 console.log(solution(str));
-// 20250215 복습
+// 20250215 복습, () 두개중 아무것도 배열에 없어야 답이라고 인정
