@@ -9,7 +9,7 @@ function solution(arr) {
       // arr[j]가 작으면 idx에 j를 넣는다
       if (arr[j] < arr[idx]) idx = j;
     }
-    // 값 바꾸기
+    // 값 바꾸기, 최신 문법이라함
     [arr[i], arr[idx]] = [arr[idx], arr[i]];
   }
   // arr을 바꾸면 answer도 바뀌어 있음
@@ -18,3 +18,4 @@ function solution(arr) {
 
 let arr = [13, 5, 11, 7, 23, 15];
 console.log(solution(arr));
+// 20250328 복습
