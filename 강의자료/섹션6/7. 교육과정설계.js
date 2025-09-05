@@ -1,7 +1,7 @@
 function solution(need, plan) {
   let answer = "YES";
   let queue = need.split("");
-  console.log(queue);
+  console.log(queue); // 필수과목 [ 'C', 'B', 'A' ]
   for (let x of plan) {
     // queue(필수과목) 확인하기
     if (queue.includes(x)) {
@@ -23,4 +23,5 @@ function solution(need, plan) {
 let a = "CBA"; // 필수과목
 let b = "CBDAGE"; // 모든과목
 console.log(solution(a, b));
-// 20250318
+// 20250318 복습
+// 20250905 복습

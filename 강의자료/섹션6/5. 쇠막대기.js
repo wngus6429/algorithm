@@ -34,3 +34,4 @@ function solution(s) {
 // 테스트
 let a = "()(((()())(())()))(())";
 console.log(solution(a)); // 결과: 17
+// 20250905 복습
