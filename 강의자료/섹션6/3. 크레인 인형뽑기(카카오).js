@@ -7,9 +7,11 @@ function solution(board, moves) {
     for (let i = 0; i < board.length; i++) {
       // pos에 -1 하는건 인덱스 번호 때문임
       // 인형을 만난거임
+      console.log("포스", pos);
+      console.log("board[i], [pos - 1]", board[i], [pos - 1]);
+      console.log("board[i][pos - 1]값", board[i][pos - 1]);
       if (board[i][pos - 1] !== 0) {
         // 임시로 넣어준다.
-        console.log(board[i][pos - 1]);
         let tmp = board[i][pos - 1];
         // 인형 뺐으니까 0으로 만들어줘서 비었다고 표시한다.
         board[i][pos - 1] = 0;
