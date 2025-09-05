@@ -1,7 +1,10 @@
 import random as r
 
+# a=[]
+# print(a)
+
 b=list()
-print(b)
+print(b) # []
 
 a=[1,2,3,4,5]
 print(a)
