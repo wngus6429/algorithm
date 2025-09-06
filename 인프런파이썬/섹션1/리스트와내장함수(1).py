@@ -20,20 +20,21 @@ a.insert(3, 7) # 3번 인덱스에 7 들어감
 print(a)
 
 a.pop()
-print(a)
+print('pop(3)빼기전', a)
 a.pop(3) # 3번 인덱스 뺴버림
-print(a)
-
+print('pop(3)뺀후', a)
+#! 아니 pop은 인덱스위치를 없애고 remove는 값 자체를 찾네
 a.remove(4) # 4라는 값을 없앰
-print(a)
+print('remove', a)
 
 # print(a.index(5)) # 5 라는값이 어느 인덱스에 있는지
 
+print('ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ')
 z = list(range(1,11))
 print(z)
 print(sum(z)) #! ?? 이게 된다고?
-print(max(z))
-print(min(z))
+print(max(z)) # 제일 큰 값 찾아줌
+print(min(z)) # 제일 작은 값 찾아줌
 print(min(7, 5, 8)) # 7하고 5, 8중에 젤 작은거, 5
 
 r.shuffle(z) # z 배열값 무작위로 섞음, 게임만들때 ㅋㅋ
